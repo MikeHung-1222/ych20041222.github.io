@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>個人網站</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    body {
+      background-color: #f4f8fb;
+      font-family: "Segoe UI", "Noto Sans TC", sans-serif;
+      color: #333;
+    }
+
+    .hero {
+      background: linear-gradient(to right, #2c3e50, #4ca1af);
+      color: white;
+      padding: 60px 20px 40px;
+      text-align: center;
+    }
+
+    .profile-img {
+      width: 140px;
+      height: 140px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid white;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      margin-bottom: 15px;
+    }
+
+    .nav-tabs-custom {
+      background-color: white;
+      border-radius: 12px;
+      padding: 10px;
+      margin-top: 30px;
+    }
+
+    .nav-tabs-custom .nav-link {
+      color: #2c3e50;
+      font-weight: 500;
+      padding: 10px 20px;
+      border-radius: 10px;
+      margin: 5px;
+      transition: background-color 0.3s;
+    }
+
+    .nav-tabs-custom .nav-link:hover,
+    .nav-tabs-custom .nav-link.active {
+      background-color: #e0f7fa;
+    }
+
+    .section-content {
+      display: none;
+      padding: 60px 20px;
+    }
+
+    .section-content.active {
+      display: block;
+    }
+
+    .card {
+      border: none;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .card-title {
+      font-weight: bold;
+      font-size: 1.5rem;
+      color: #2c3e50;
+    }
+
+    .card-text {
+      font-size: 1.05rem;
+      line-height: 1.8;
+    }
+
+    .img-fluid {
+      max-width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 封面 -->
+  <section class="hero">
+    <div class="container">
+      <img src="個人照.JPG" alt="個人照片" class="profile-img" />
+      <h1 class="display-5 fw-bold">嗨，我是洪翊淳</h1>
+      <p class="lead mt-3">
+        一個喜歡運動、攝影、打電腦的資訊管理系學生<br />
+        專注於打造實用又美觀的網站與系統。
+      </p>
+
+      <!-- 導覽列 -->
+      <ul class="nav nav-tabs justify-content-center nav-tabs-custom flex-wrap mt-4" id="sectionTabs">
+        <li class="nav-item"><a class="nav-link" href="#" data-target="about">個人簡介</a></li>
+        <li class="nav-item"><a class="nav-link active" href="#" data-target="education">教育背景</a></li>
+        <li class="nav-item"><a class="nav-link" href="#" data-target="experience">經驗和實習</a></li>
+        <li class="nav-item"><a class="nav-link" href="#" data-target="skills">專業技能</a></li>
+        <li class="nav-item"><a class="nav-link" href="#" data-target="projects">專案作品</a></li>
+        <li class="nav-item"><a class="nav-link" href="#" data-target="articles">文章</a></li>
+        <li class="nav-item"><a class="nav-link" href="#" data-target="photos">參與活動照片</a></li>
+        <li class="nav-item"><a class="nav-link" href="#" data-target="awards">獲獎紀錄</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 教育背景 -->
+  <section id="section-education" class="section-content active">
+    <div class="container">
+      <div class="card p-4">
+        <h2 class="card-title mb-4">教育背景</h2>
+        <ul class="list-unstyled card-text">
+          <li class="mb-4">
+            <strong>國立聯合大學 資訊管理學系</strong><br />
+            學士學位（2023 年 9 月 ～ 預計 2027 年 6 月）<br />
+            主修：資訊管理學系<br />
+            相關課程：資料庫系統、網頁程式設計、Python 資料分析、資料庫程式設計
+          </li>
+          <li class="mb-4">
+            <strong>高雄市立左營高中</strong><br />
+            普通科（2020 年 9 月 ～ 2023 年 6 月）<br />
+            班級幹部: 高二-體育股長 高三-體育股長<br />
+            社團幹部: 鬥牛社-文書
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 經驗和實習 -->
+  <section id="section-experience" class="section-content">
+    <div class="container">
+      <div class="card p-4">
+        <h2 class="card-title mb-4">經驗和實習</h2>
+        <p class="card-text">
+          - 參加偏鄉資訊志工，至同光國小教國小學生玩自走車
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 專業技能 -->
+  <section id="section-skills" class="section-content">
+    <div class="container">
+      <div class="card p-4">
+        <h2 class="card-title mb-4">專業技能</h2>
+        <p class="card-text">
+          熟悉前端程式語言: HTML、CSS<br/>
+          資料庫程式語言: PHP、MySQL<br/>
+          其他: Python資料分析、Bootstrap、Git 版本控制
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 專案作品 -->
+  <section id="section-projects" class="section-content">
+    <div class="container">
+      <div class="card p-4">
+        <h2 class="card-title mb-4">專案作品</h2>
+        <p class="card-text">
+          <a href="https://youtu.be/Q77gi9h7s4s" target="_blank">點我觀看專案作品影片</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 文章 -->
+  <section id="section-articles" class="section-content">
+    <div class="container">
+      <div class="card p-4">
+        <h2 class="card-title mb-4">文章</h2>
+        <p class="card-text">
+          <strong>我對資訊管理與科技的觀點</strong><br /><br />
+          在現在這個數位轉型的時代，資訊管理早就不只是管電腦或系統而已，它更像是在幫助企業做出聰明決策的好幫手。我覺得，一個厲害的資管人，不只要懂技術，還要會看數據、懂商業邏輯，最重要的是，能把科技用在對的地方，真的幫公司創造價值。<br /><br />
+          AI、大數據、雲端與資訊安全等技術快速演進，這不僅帶來了大量就業機會，也代表著我們要持續學習與跨領域合作。我特別關注資料分析與前端開發，因為這兩個領域能讓資料「說話」，並用設計讓使用者真正「理解」。<br /><br />
+          我相信，科技的終極目標是改善人們的生活。因此，我希望未來能參與具有社會價值的專案，透過資訊技術解決實際問題，無論是在教育、健康、環境還是日常生活中，都能發揮資訊人的力量。
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 參與活動照片 -->
+  <section id="section-photos" class="section-content">
+    <div class="container">
+      <div class="card p-4">
+        <h2 class="card-title mb-4">參與活動照片</h2>
+        <div class="text-center">
+          <img src="個人照2.jpg" alt="活動照片" class="img-fluid rounded shadow" style="max-width: 600px;" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 個人簡介 -->
+  <section id="section-about" class="section-content">
+    <div class="container">
+      <div class="card p-4">
+        <h2 class="card-title mb-4">個人簡介</h2>
+        <p class="card-text">
+          我是洪翊淳，我是一名國立聯合大學資訊管理系的學生，目前主修是資訊管理、程式設計對網站設計與資料分析特別有興趣。<br />
+          興趣是運動、攝影和烹飪，樂於學習新技術，致力於將科技應用於解決實際問題。<br />
+          目標是成為一位能夠跨領域整合的資訊專業人才。
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 獲獎紀錄 -->
+  <section id="section-awards" class="section-content">
+    <div class="container">
+      <div class="card p-4">
+        <h2 class="card-title mb-4">獲獎紀錄</h2>
+        <ul class="list-unstyled card-text">
+          <li>🏀 左營高中畢業盃籃球賽 - 亞軍</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- JS 切換區塊顯示 -->
+  <script>
+    const tabs = document.querySelectorAll('.nav-link');
+    const sections = document.querySelectorAll('.section-content');
+
+    tabs.forEach(tab => {
+      tab.addEventListener('click', function (e) {
+        e.preventDefault();
+        tabs.forEach(t => t.classList.remove('active'));
+        this.classList.add('active');
+        const target = 'section-' + this.dataset.target;
+        sections.forEach(section => {
+          section.classList.remove('active');
+          if (section.id === target) {
+            section.classList.add('active');
+          }
+        });
+      });
+    });
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
